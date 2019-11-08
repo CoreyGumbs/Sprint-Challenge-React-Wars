@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Normalize from 'react-normalize';
+import GlobalStyles from './StyledComponents/GlobalStyles';
+import {AppHeading} from './StyledComponents/AppStyle';
 
 import CharactersContainer from './components/CharactersContainer/CharactersContainer';
 const App = () => {
@@ -24,7 +26,9 @@ const App = () => {
   return (
     <div className="App">
       <Normalize />
-      <h1 className="Header">React Wars</h1>
+      <GlobalStyles />
+    
+      <AppHeading>React Wars</AppHeading>
       <CharactersContainer characters={characters} />
     </div>
   );
