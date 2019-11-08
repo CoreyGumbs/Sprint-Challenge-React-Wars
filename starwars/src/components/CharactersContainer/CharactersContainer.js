@@ -1,21 +1,23 @@
 import React from 'react';
 import CharacterCard from '../CharacterCard/CharacterCard';
-
+import {CardContainer, CardLoading} from '../../StyledComponents/CardStyles';
 
 const CharactersContainer = props => {
     const {characters} = props;
   
     //loading 
     if(characters.length === 0) return (
-        <div className="">Loading...</div>
+        <CardContainer>
+            <CardLoading>Loading...</CardLoading>
+        </CardContainer>
     )
 
     return(
-        <div>
+        <CardContainer>
             {characters.map( (character, idx) => (
                 <CharacterCard key={idx} character={character} />
             ))}
-        </div>
+        </CardContainer>
     )
 }
 
