@@ -1,17 +1,20 @@
 import React from 'react';
+import CharacterCard from './CharacterCard/CharacterCard';
 
 
 const Characters = props => {
-    console.log(props);
-    
+    const {characters} = props;
+  
     //loading 
-    if(props.characters.length === 0) return (
+    if(characters.length === 0) return (
         <div className="">Loading...</div>
     )
 
     return(
         <div>
-            characters
+            {characters.map( (character, idx) => (
+                <CharacterCard key={idx} character={character} />
+            ))}
         </div>
     )
 }
