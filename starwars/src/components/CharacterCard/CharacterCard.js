@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import CharacteCardTitle from './CharacterCardTitle/CharacterCardTitle';
+import CharacterCardAttrs from './CharacterCardAttrs/CharacterCardAttrs';
 
 const CharacterCard = props => {
-    console.log(props);
-    const {name, gender, eye_color, hair_color, mass, height, skin_color, birth_year} = props;
-
+    const {name} = props.character;
 
     return(
         <div>
             <CharacteCardTitle name={name} />
+            <CharacterCardAttrs attrs={props.character} />
         </div>
     )    
 }
