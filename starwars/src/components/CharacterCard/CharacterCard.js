@@ -1,15 +1,16 @@
 import React from 'react';
 import CharacteCardTitle from './CharacterCardTitle/CharacterCardTitle';
 import CharacterCardAttrs from './CharacterCardAttrs/CharacterCardAttrs';
+import {CharacterCardContainer} from '../../StyledComponents/CardStyles';
 
 const CharacterCard = props => {
     const {name} = props.character;
 
     return(
-        <div>
+        <CharacterCardContainer>
             <CharacteCardTitle name={name} />
             <CharacterCardAttrs attrs={props.character} />
-        </div>
+        </CharacterCardContainer>
     )    
 }
 

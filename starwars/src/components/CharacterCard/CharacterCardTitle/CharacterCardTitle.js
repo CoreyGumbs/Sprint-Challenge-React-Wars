@@ -1,13 +1,14 @@
 import React from 'react';
+import {CharacterCardTitleHeading} from '../../../StyledComponents/CardStyles';
 
 
 const CharacterCardTitle = props => {
     const {name} = props;
 
     return(
-        <div>
-            <h1>{name}</h1>
-        </div>
+        <React.Fragment>
+            <CharacterCardTitleHeading>{name}</CharacterCardTitleHeading>
+        </React.Fragment>
     )
 }
 
