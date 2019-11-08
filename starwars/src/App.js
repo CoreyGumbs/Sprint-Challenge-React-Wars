@@ -12,10 +12,14 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() =>{
-    
+    axios.get('https://swapi.co/api/people/')
+    .then(response =>{
+      setCharacters(response.data.results);
+    })
+    .catch(err => console.log(err));
   }, []);
 
-
+  console.log(characters[0]);
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
