@@ -1,5 +1,5 @@
 import { createGlobalStyle} from 'styled-components';
-import img from '../imgs/vader-bg.jpg';
+import img from '../imgs/vader-bg2.jpg';
 
 const GlobalStyles = createGlobalStyle`
    @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Press+Start+2P|Yanone+Kaffeesatz&display=swap');
