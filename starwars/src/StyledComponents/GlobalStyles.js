@@ -1,6 +1,7 @@
 import { createGlobalStyle} from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
     * {
         font-size: 62.5%;
