@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import './App.css';
+import Normalize from 'react-normalize';
 
 import CharactersContainer from './components/CharactersContainer/CharactersContainer';
 const App = () => {
@@ -23,6 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Normalize />
       <h1 className="Header">React Wars</h1>
       <CharactersContainer characters={characters} />
     </div>
