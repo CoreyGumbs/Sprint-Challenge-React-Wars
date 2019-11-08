@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
 
+import Characters from './components/Characters/Characters';
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -19,10 +20,11 @@ const App = () => {
     .catch(err => console.log(err));
   }, []);
 
-  console.log(characters[0]);
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Characters characters={characters} />
     </div>
   );
 }
