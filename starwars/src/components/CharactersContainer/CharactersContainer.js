@@ -1,8 +1,8 @@
 import React from 'react';
-import CharacterCard from './CharacterCard/CharacterCard';
+import CharacterCard from '../CharacterCard/CharacterCard';
 
 
-const Characters = props => {
+const CharactersContainer = props => {
     const {characters} = props;
   
     //loading 
@@ -20,4 +20,4 @@ const Characters = props => {
 }
 
 
-export default Characters;
+export default CharactersContainer;
