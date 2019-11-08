@@ -1,7 +1,8 @@
 import { createGlobalStyle} from 'styled-components';
+import img from '../imgs/vader-bg.jpg';
 
 const GlobalStyles = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+   @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Press+Start+2P|Yanone+Kaffeesatz&display=swap');
 
     * {
         font-size: 62.5%;
@@ -12,8 +13,8 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: sans-serif;
-        background-image: url('../sw-bg.jpg');
-        background-size: cover;
+        background-color: black;
+        background: black url(${img}) top center no-repeat fixed;
     }
 
 `;
